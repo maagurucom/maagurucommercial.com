@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maa Guru Commercial | Commercial Leasing in East UP</title>
+<meta name="description" content="East UP's commercial leasing specialists. We help national pharmacy, retail, and healthcare brands secure spaces in Lucknow, Varanasi, and Ayodhya.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+    color: #2D3748;
+    background: #F5F3EF;
+    min-height: 100vh;
+  }
+
+  /* ── SITE WRAPPER ── */
+  .mgc-site {
+    max-width: 480px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 0 40px rgba(0,0,0,0.12);
+  }
+
+  /* ── NAV ── */
+  .mgc-nav {
+    background: #0B1F3A;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 58px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .mgc-logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 0.04em;
+    line-height: 1.2;
+  }
+  .mgc-logo span {
+    display: block;
+    font-size: 8.5px;
+    font-weight: 400;
+    color: #64748B;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+  .mgc-nav-cta {
+    background: #B8860B;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    padding: 9px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: background 0.2s;
+  }
+  .mgc-nav-cta:hover { background: #8F6409; }
+
+  /* ── HERO ── */
+  .mgc-hero {
+    background: #0B1F3A;
+    padding: 52px 28px 48px;
+    position: relative;
+    overflow: hidden;
+  }
+  /* FIX 1: decorative rings — were defined but missing pseudo-element rules */
+  .mgc-hero::before {
+    content: '';
+    position: absolute;
+    right: -70px;
+    top: -70px;
+    width: 280px;
+    height: 280px;
+    border: 1px solid rgba(184,134,11,0.18);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  .mgc-hero::after {
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    width: 140px;
+    height: 140px;
+    border: 1px solid rgba(184,134,11,0.10);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  .mgc-eyebrow {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9.5px;
+    font-weight: 700;
+    color: #B8860B;
+    letter-spacing: 0.20em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    position: relative;
+  }
+  .mgc-hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    color: #fff;
+    line-height: 1.28;
+    margin-bottom: 16px;
+    position: relative;
+  }
+  .mgc-hero h1 em {
+    color: #B8860B;
+    font-style: normal;
+  }
+  .mgc-hero > p {
+    font-size: 13.5px;
+    color: #94A3B8;
+    line-height: 1.75;
+    margin-bottom: 28px;
+    position: relative;
+  }
+  .mgc-hero-ctas {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  /* ── BUTTONS ── */
+  .mgc-btn-primary {
+    background: #B8860B;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 13px 20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    transition: background 0.2s;
+    min-height: 48px;
+  }
+  .mgc-btn-primary:hover { background: #8F6409; }
+  .mgc-btn-secondary {
+    background: transparent;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 13px 20px;
+    border-radius: 4px;
+    border: 1px solid rgba(255,255,255,0.22);
+    cursor: pointer;
+    transition: border-color 0.2s;
+    min-height: 48px;
+  }
+  .mgc-btn-secondary:hover { border-color: rgba(255,255,255,0.5); }
+
+  /* ── TRUST STRIP ── */
+  .mgc-trust-strip {
+    display: flex;
+    gap: 0;
+    margin-top: 40px;
+    padding-top: 28px;
+    border-top: 1px solid rgba(255,255,255,0.07);
+    position: relative;
+  }
+  .mgc-trust-item {
+    flex: 1;
+    text-align: center;
+    padding: 0 8px;
+    border-right: 1px solid rgba(255,255,255,0.07);
+  }
+  .mgc-trust-item:last-child { border-right: none; }
+  .mgc-trust-item strong {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #B8860B;
+    margin-bottom: 4px;
+  }
+  .mgc-trust-item span {
+    font-size: 8.5px;
+    color: #4A5568;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+
+  /* ── GOLD DIVIDER ── */
+  .mgc-divider {
+    height: 3px;
+    background: linear-gradient(90deg, #B8860B 0%, #0B1F3A 100%);
+  }
+
+  /* ── SECTIONS ── */
+  .mgc-section { padding: 44px 28px; }
+  .mgc-section-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    color: #B8860B;
+    letter-spacing: 0.20em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .mgc-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #0B1F3A;
+    line-height: 1.28;
+    margin-bottom: 26px;
+  }
+  .mgc-section > p {
+    font-size: 13.5px;
+    line-height: 1.75;
+    color: #4A5568;
+    margin-bottom: 16px;
+  }
+
+  /* ── SERVICES GRID ── */
+  .mgc-services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .mgc-svc-card {
+    background: #F8F7F4;
+    border-radius: 6px;
+    padding: 16px 14px;
+    border-left: 3px solid #B8860B;
+  }
+  .mgc-svc-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11.5px;
+    font-weight: 700;
+    color: #0B1F3A;
+    margin-bottom: 7px;
+    line-height: 1.3;
+  }
+  .mgc-svc-card p {
+    font-size: 11px;
+    color: #64748B;
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  /* ── PAST WORK ── */
+  .mgc-cred-bg { background: #F8F7F4; }
+  .mgc-deal-card {
+    background: #fff;
+    border-radius: 6px;
+    padding: 18px;
+    border: 0.5px solid #E2DDD6;
+    margin-bottom: 12px;
+  }
+  .mgc-deal-card:last-child { margin-bottom: 0; }
+  .mgc-deal-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: #0B1F3A;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+  .mgc-deal-badge {
+    background: #0B1F3A;
+    color: #B8860B;
+    font-size: 8.5px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 2px;
+    letter-spacing: 0.07em;
+  }
+  .mgc-deal-card p {
+    font-size: 12px;
+    color: #4A5568;
+    line-height: 1.7;
+    margin-bottom: 8px;
+  }
+  .mgc-deal-why {
+    font-size: 11px;
+    color: #B8860B;
+    font-style: italic;
+    line-height: 1.6;
+  }
+
+  /* ── CITIES ── */
+  .mgc-cities {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .mgc-city-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 16px;
+    background: #fff;
+    border: 0.5px solid #E2DDD6;
+    border-radius: 6px;
+  }
+  .mgc-city-dot {
+    width: 8px;
+    height: 8px;
+    background: #B8860B;
+    border-radius: 50%;
+    margin-top: 5px;
+    flex-shrink: 0;
+  }
+  .mgc-city-row h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #0B1F3A;
+    margin-bottom: 5px;
+  }
+  .mgc-city-row p {
+    font-size: 11.5px;
+    color: #64748B;
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  /* ── WHY SECTION (dark bg) ── */
+  .mgc-why-bg { background: #0B1F3A; }
+  .mgc-why-bg .mgc-section-label { color: #B8860B; }
+  .mgc-why-bg h2 { color: #fff; }
+  .mgc-diff-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .mgc-diff-card {
+    border: 0.5px solid rgba(255,255,255,0.10);
+    border-radius: 6px;
+    padding: 16px 14px;
+    background: rgba(255,255,255,0.03);
+  }
+  .mgc-diff-num {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(184,134,11,0.35);
+    margin-bottom: 8px;
+    line-height: 1;
+  }
+  .mgc-diff-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11.5px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 6px;
+  }
+  .mgc-diff-card p {
+    font-size: 11px;
+    color: #94A3B8;
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  /* ── CONTACT ── */
+  .mgc-contact-bg {
+    background: #fff;
+    border-top: 1px solid #EDE9E2;
+  }
+  /* FIX 2: WhatsApp button — was text-only, now has proper icon treatment */
+  .mgc-wa-btn {
+    background: #25D366;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 16px 24px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    width: 100%;
+    margin-bottom: 14px;
+    letter-spacing: 0.03em;
+    min-height: 52px;
+    transition: background 0.2s;
+  }
+  .mgc-wa-btn:hover { background: #1DA851; }
+  .mgc-email-field {
+    width: 100%;
+    background: #F8F7F4;
+    border: 0.5px solid #E2DDD6;
+    border-radius: 4px;
+    padding: 13px 14px;
+    font-size: 12.5px;
+    color: #4A5568;
+    font-family: 'Open Sans', sans-serif;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .mgc-email-field:focus { border-color: #B8860B; }
+  .mgc-response-note {
+    font-size: 11px;
+    color: #94A3B8;
+    text-align: center;
+    margin-top: 14px;
+    line-height: 1.6;
+  }
+
+  /* ── MID-PAGE CTA (after past work) ── */
+  .mgc-mid-cta {
+    display: flex;
+    justify-content: center;
+    padding: 4px 0 8px;
+  }
+  .mgc-mid-cta-btn {
+    background: transparent;
+    color: #0B1F3A;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: 1.5px solid #0B1F3A;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: background 0.2s, color 0.2s;
+    min-height: 44px;
+  }
+  .mgc-mid-cta-btn:hover { background: #0B1F3A; color: #fff; }
+
+  /* ── FOOTER ── */
+  .mgc-footer {
+    background: #060F1D;
+    padding: 24px 28px;
+    text-align: center;
+  }
+  .mgc-footer p {
+    font-size: 10px;
+    color: #334155;
+    line-height: 2;
+  }
+  .mgc-footer strong { color: #B8860B; font-weight: 600; }
+  .mgc-footer .copy { color: #1E293B; }
+
+  /* ── WA ICON SVG ── */
+  .wa-icon { width: 17px; height: 17px; fill: #fff; flex-shrink: 0; }
+</style>
+</head>
+<body>
+
+<div class="mgc-site">
+
+  <!-- NAV -->
+  <nav class="mgc-nav">
+    <div class="mgc-logo">
+      MAA GURU COMMERCIAL
+      <span>East UP's Leasing Specialists</span>
+    </div>
+    <button class="mgc-nav-cta" onclick="window.open('https://wa.me/918896662035?text=Hi%2C%20I%27m%20looking%20for%20a%20commercial%20space%20in%20East%20UP.','_blank')">
+      <!-- FIX 2: WhatsApp icon added to nav button -->
+      <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.025.507 3.934 1.397 5.605L0 24l6.545-1.371A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.013-1.377l-.36-.213-3.727.979 1.002-3.645-.234-.375A9.818 9.818 0 1112 21.818z"/></svg>
+      WhatsApp Us
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="mgc-hero">
+    <div class="mgc-eyebrow">Commercial Real Estate · East Uttar Pradesh</div>
+    <h1>We Place <em>National Brands</em> in East UP's Best Spaces</h1>
+    <p>Specialist commercial leasing for pharmacy, retail, and healthcare brands in Lucknow, Varanasi, and Ayodhya.</p>
+    <div class="mgc-hero-ctas">
+      <!-- FIX 2: WhatsApp icon in primary hero CTA -->
+      <button class="mgc-btn-primary" onclick="window.open('https://wa.me/918896662035?text=Hi%2C%20I%27m%20looking%20for%20a%20commercial%20space%20in%20East%20UP.','_blank')">
+        <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.025.507 3.934 1.397 5.605L0 24l6.545-1.371A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.013-1.377l-.36-.213-3.727.979 1.002-3.645-.234-.375A9.818 9.818 0 1112 21.818z"/></svg>
+        WhatsApp Us Now
+      </button>
+      <button class="mgc-btn-secondary">View Our Work</button>
+    </div>
+    <div class="mgc-trust-strip">
+      <div class="mgc-trust-item">
+        <strong>3</strong>
+        <span>Cities Covered</span>
+      </div>
+      <div class="mgc-trust-item">
+        <strong>Tata 1mg</strong>
+        <span>Brand Served</span>
+      </div>
+      <div class="mgc-trust-item">
+        <strong>Airport</strong>
+        <span>Retail Facilitated</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- GOLD DIVIDER -->
+  <div class="mgc-divider"></div>
+
+  <!-- WHAT WE DO -->
+  <section class="mgc-section">
+    <div class="mgc-section-label">Our Services</div>
+    <h2>Specialist Leasing.<br>No Generalists.</h2>
+    <div class="mgc-services">
+      <div class="mgc-svc-card">
+        <h3>Retail Space Leasing</h3>
+        <p>Ground floor, high-footfall locations near hospital clusters and main roads.</p>
+      </div>
+      <div class="mgc-svc-card">
+        <h3>Premium &amp; Airport Retail</h3>
+        <p>Commercial space inside high-traffic destination zones and airport terminals.</p>
+      </div>
+      <div class="mgc-svc-card">
+        <h3>Office Space Sourcing</h3>
+        <p>Plug-and-play offices for startups and satellite offices across East UP.</p>
+      </div>
+      <div class="mgc-svc-card">
+        <h3>Market Intelligence</h3>
+        <p>On-ground rental benchmarks and direct landlord networks across East UP.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAST WORK -->
+  <section class="mgc-section mgc-cred-bg">
+    <div class="mgc-section-label">Past Work</div>
+    <h2>Brands We Have Worked With</h2>
+
+    <div class="mgc-deal-card">
+      <div class="mgc-deal-brand">
+        Tata 1mg
+        <span class="mgc-deal-badge">Pharmacy Retail</span>
+      </div>
+      <p>Facilitated commercial retail space acquisition for Tata 1mg's pharmacy retail format in Varanasi, Uttar Pradesh. The brief required ground floor visibility and proximity to medical facilities.</p>
+      <div class="mgc-deal-why">National pharmacy format. Stringent location requirements met on the ground.</div>
+    </div>
+
+    <div class="mgc-deal-card">
+      <div class="mgc-deal-brand">
+        Airport Terminal Retail
+        <span class="mgc-deal-badge">Ayodhya</span>
+      </div>
+      <p>Facilitated commercial space leasing inside the Maharishi Valmiki International Airport terminal, Ayodhya — one of the most significant commercial developments in East UP.</p>
+      <div class="mgc-deal-why">Airport retail is the highest-credibility category in commercial leasing.</div>
+    </div>
+
+    <div class="mgc-deal-card">
+      <div class="mgc-deal-brand">
+        Office Leasing
+        <span class="mgc-deal-badge">Lucknow · Ayodhya</span>
+      </div>
+      <p>Facilitated commercial office space sourcing for startups and growing businesses across Lucknow and Ayodhya — covering both established and emerging East UP markets.</p>
+      <div class="mgc-deal-why">Demonstrates active deal flow across the full East UP geography.</div>
+    </div>
+
+    <!-- FIX 3: Mid-page CTA added after past work (was missing entirely) -->
+    <div class="mgc-mid-cta" style="margin-top:20px">
+      <button class="mgc-mid-cta-btn" onclick="window.open('https://wa.me/918896662035?text=Hi%2C%20I%27m%20interested%20in%20discussing%20commercial%20space%20requirements%20in%20East%20UP.','_blank')">
+        <svg style="width:14px;height:14px;fill:currentColor;flex-shrink:0" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.025.507 3.934 1.397 5.605L0 24l6.545-1.371A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.013-1.377l-.36-.213-3.727.979 1.002-3.645-.234-.375A9.818 9.818 0 1112 21.818z"/></svg>
+        Discuss Your Requirements
+      </button>
+    </div>
+  </section>
+
+  <!-- CITIES -->
+  <section class="mgc-section">
+    <div class="mgc-section-label">Coverage</div>
+    <h2>Three Cities.<br>One Specialist Firm.</h2>
+    <div class="mgc-cities">
+      <div class="mgc-city-row">
+        <div class="mgc-city-dot"></div>
+        <div>
+          <h3>Lucknow</h3>
+          <p>Our headquarters and primary market. Growing startup ecosystem, major hospital clusters, and expanding retail corridors that national brands are actively targeting.</p>
+        </div>
+      </div>
+      <div class="mgc-city-row">
+        <div class="mgc-city-dot"></div>
+        <div>
+          <h3>Varanasi</h3>
+          <p>High-footfall market driven by medical tourism and religious pilgrimage. Pharmacy, diagnostics, and healthcare retail formats see strong demand here.</p>
+        </div>
+      </div>
+      <div class="mgc-city-row">
+        <div class="mgc-city-dot"></div>
+        <div>
+          <h3>Ayodhya</h3>
+          <p>East UP's fastest-growing city. Following the Shri Ram Mandir consecration, Ayodhya is the highest-opportunity market in the region for national retail expansion.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY MAA GURU -->
+  <section class="mgc-section mgc-why-bg">
+    <div class="mgc-section-label">Why Us</div>
+    <h2>Why Expansion Managers Choose Maa Guru Commercial</h2>
+    <div class="mgc-diff-grid">
+      <div class="mgc-diff-card">
+        <div class="mgc-diff-num">01</div>
+        <h3>East UP Only</h3>
+        <p>We don't cover all of India. We cover this region better than anyone.</p>
+      </div>
+      <div class="mgc-diff-card">
+        <div class="mgc-diff-num">02</div>
+        <h3>Brand Track Record</h3>
+        <p>Tata 1mg. Airport retail. We understand what national brands require.</p>
+      </div>
+      <div class="mgc-diff-card">
+        <div class="mgc-diff-num">03</div>
+        <h3>Direct Landlord Access</h3>
+        <p>No intermediary chains. Direct relationships with property owners.</p>
+      </div>
+      <div class="mgc-diff-card">
+        <div class="mgc-diff-num">04</div>
+        <h3>GST Registered</h3>
+        <p>Maa Guru Enterprises. Compliant for corporate procurement systems.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="mgc-section mgc-contact-bg">
+    <div class="mgc-section-label">Get In Touch</div>
+    <h2>Ready to Expand to East UP?</h2>
+    <p style="font-size:13px;color:#64748B;margin-bottom:24px;line-height:1.75">Share your city, format type, and location preference. We will respond with relevant options within 4 business hours.</p>
+
+    <!-- FIX 2: Full WhatsApp icon in contact section CTA -->
+    <button class="mgc-wa-btn" onclick="window.open('https://wa.me/918896662035?text=Hi%2C%20I%27m%20looking%20for%20a%20commercial%20space%20in%20East%20UP.%20Please%20share%20available%20options.','_blank')">
+      <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.025.507 3.934 1.397 5.605L0 24l6.545-1.371A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.013-1.377l-.36-.213-3.727.979 1.002-3.645-.234-.375A9.818 9.818 0 1112 21.818z"/></svg>
+      Start a Conversation on WhatsApp
+    </button>
+
+    <input class="mgc-email-field" type="email" placeholder="Or email us your requirements: [your@company.com]" />
+    <p class="mgc-response-note">All serious site enquiries receive a response within 4 business hours.<br>Maa Guru Enterprises · GST Registered · Lucknow, Uttar Pradesh</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="mgc-footer">
+    <p>
+      <strong>Maa Guru Commercial</strong> · Maa Guru Enterprises (GST Registered)<br>
+      Lucknow · Varanasi · Ayodhya · East Uttar Pradesh<br>
+      <span class="copy">© 2025 Maa Guru Enterprises. All rights reserved.</span>
+    </p>
+  </footer>
+
+</div><!-- end .mgc-site -->
+
+</body>
+</html>
