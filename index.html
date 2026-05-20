@@ -44,12 +44,13 @@
     color: #fff;
     letter-spacing: 0.04em;
     line-height: 1.2;
+    text-decoration: none;
   }
   .mgc-logo span {
     display: block;
-    font-size: 8.5px;
-    font-weight: 400;
-    color: #64748B;
+    font-size: 9px;
+    font-weight: 500;
+    color: #CBD5E1; /* Brightened for better visibility */
     letter-spacing: 0.14em;
     text-transform: uppercase;
     margin-top: 2px;
@@ -79,7 +80,6 @@
     position: relative;
     overflow: hidden;
   }
-  /* FIX 1: decorative rings — were defined but missing pseudo-element rules */
   .mgc-hero::before {
     content: '';
     position: absolute;
@@ -365,9 +365,9 @@
   }
   .mgc-diff-num {
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
-    color: rgba(184,134,11,0.35);
+    color: #B8860B; /* Made solid gold and slightly larger for high visibility */
     margin-bottom: 8px;
     line-height: 1;
   }
@@ -390,7 +390,6 @@
     background: #fff;
     border-top: 1px solid #EDE9E2;
   }
-  /* FIX 2: WhatsApp button — was text-only, now has proper icon treatment */
   .mgc-wa-btn {
     background: #25D366;
     color: #fff;
@@ -412,19 +411,6 @@
     transition: background 0.2s;
   }
   .mgc-wa-btn:hover { background: #1DA851; }
-  .mgc-email-field {
-    width: 100%;
-    background: #F8F7F4;
-    border: 0.5px solid #E2DDD6;
-    border-radius: 4px;
-    padding: 13px 14px;
-    font-size: 12.5px;
-    color: #4A5568;
-    font-family: 'Open Sans', sans-serif;
-    outline: none;
-    transition: border-color 0.2s;
-  }
-  .mgc-email-field:focus { border-color: #B8860B; }
   .mgc-response-note {
     font-size: 11px;
     color: #94A3B8;
@@ -457,6 +443,13 @@
     min-height: 44px;
   }
   .mgc-mid-cta-btn:hover { background: #0B1F3A; color: #fff; }
+  .mgc-email-link-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    text-decoration: none;
+  }
 
   /* ── FOOTER ── */
   .mgc-footer {
@@ -480,31 +473,27 @@
 
 <div class="mgc-site">
 
-  <!-- NAV -->
   <nav class="mgc-nav">
-    <div class="mgc-logo">
+    <a href="index.html" class="mgc-logo">
       MAA GURU COMMERCIAL
       <span>East UP's Leasing Specialists</span>
-    </div>
+    </a>
     <button class="mgc-nav-cta" onclick="window.open('https://wa.me/919450971176?text=Hi%2C%20I%27m%20looking%20for%20a%20commercial%20space%20in%20East%20UP.','_blank')">
-      <!-- FIX 2: WhatsApp icon added to nav button -->
       <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.025.507 3.934 1.397 5.605L0 24l6.545-1.371A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.013-1.377l-.36-.213-3.727.979 1.002-3.645-.234-.375A9.818 9.818 0 1112 21.818z"/></svg>
       WhatsApp Us
     </button>
   </nav>
 
-  <!-- HERO -->
   <section class="mgc-hero">
     <div class="mgc-eyebrow">Commercial Real Estate · East Uttar Pradesh</div>
     <h1>We Place <em>National Brands</em> in East UP's Best Spaces</h1>
     <p>Specialist commercial leasing for pharmacy, retail, and healthcare brands in Lucknow, Varanasi, and Ayodhya.</p>
     <div class="mgc-hero-ctas">
-      <!-- FIX 2: WhatsApp icon in primary hero CTA -->
       <button class="mgc-btn-primary" onclick="window.open('https://wa.me/919450971176?text=Hi%2C%20I%27m%20looking%20for%20a%20commercial%20space%20in%20East%20UP.','_blank')">
         <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.025.507 3.934 1.397 5.605L0 24l6.545-1.371A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.013-1.377l-.36-.213-3.727.979 1.002-3.645-.234-.375A9.818 9.818 0 1112 21.818z"/></svg>
         WhatsApp Us Now
       </button>
-      <button class="mgc-btn-secondary">View Our Work</button>
+      <button class="mgc-btn-secondary" onclick="window.location.href='work.html'">View Our Work</button>
     </div>
     <div class="mgc-trust-strip">
       <div class="mgc-trust-item">
@@ -512,8 +501,8 @@
         <span>Cities Covered</span>
       </div>
       <div class="mgc-trust-item">
-        <strong>Pharmacy Brand</strong>
-        <span>Brand Served</span>
+        <strong>National</strong>
+        <span>Pharmacy Brands</span>
       </div>
       <div class="mgc-trust-item">
         <strong>Airport</strong>
@@ -522,10 +511,8 @@
     </div>
   </section>
 
-  <!-- GOLD DIVIDER -->
   <div class="mgc-divider"></div>
 
-  <!-- WHAT WE DO -->
   <section class="mgc-section">
     <div class="mgc-section-label">Our Services</div>
     <h2>Specialist Leasing.<br>No Generalists.</h2>
@@ -549,7 +536,6 @@
     </div>
   </section>
 
-  <!-- PAST WORK -->
   <section class="mgc-section mgc-cred-bg">
     <div class="mgc-section-label">Past Work</div>
     <h2>Past Work</h2>
@@ -581,7 +567,6 @@
       <div class="mgc-deal-why">Demonstrates active deal flow across the full East UP geography.</div>
     </div>
 
-    <!-- FIX 3: Mid-page CTA added after past work (was missing entirely) -->
     <div class="mgc-mid-cta" style="margin-top:20px">
       <button class="mgc-mid-cta-btn" onclick="window.open('https://wa.me/919450971176?text=Hi%2C%20I%27m%20interested%20in%20discussing%20commercial%20space%20requirements%20in%20East%20UP.','_blank')">
         <svg style="width:14px;height:14px;fill:currentColor;flex-shrink:0" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.025.507 3.934 1.397 5.605L0 24l6.545-1.371A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.013-1.377l-.36-.213-3.727.979 1.002-3.645-.234-.375A9.818 9.818 0 1112 21.818z"/></svg>
@@ -590,7 +575,6 @@
     </div>
   </section>
 
-  <!-- CITIES -->
   <section class="mgc-section">
     <div class="mgc-section-label">Coverage</div>
     <h2>Three Cities.<br>One Specialist Firm.</h2>
@@ -619,7 +603,6 @@
     </div>
   </section>
 
-  <!-- WHY MAA GURU -->
   <section class="mgc-section mgc-why-bg">
     <div class="mgc-section-label">Why Us</div>
     <h2>Why Expansion Managers Choose Maa Guru Commercial</h2>
@@ -647,32 +630,28 @@
     </div>
   </section>
 
-  <!-- CONTACT -->
   <section class="mgc-section mgc-contact-bg">
     <div class="mgc-section-label">Get In Touch</div>
     <h2>Ready to Expand to East UP?</h2>
     <p style="font-size:13px;color:#64748B;margin-bottom:24px;line-height:1.75">Share your city, format type, and location preference. We will respond with relevant options within 4 business hours.</p>
 
-    <!-- FIX 2: Full WhatsApp icon in contact section CTA -->
     <button class="mgc-wa-btn" onclick="window.open('https://wa.me/919450971176?text=Hi%2C%20I%27m%20looking%20for%20a%20commercial%20space%20in%20East%20UP.%20Please%20share%20available%20options.','_blank')">
       <svg class="wa-icon" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.025.507 3.934 1.397 5.605L0 24l6.545-1.371A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.013-1.377l-.36-.213-3.727.979 1.002-3.645-.234-.375A9.818 9.818 0 1112 21.818z"/></svg>
       Start a Conversation on WhatsApp
     </button>
 
-    <input class="mgc-email-field" type="email" placeholder="Or email us your requirements: [your@company.com]" />
+    <a href="mailto:maagurucommercial@gmail.com" class="mgc-mid-cta-btn mgc-email-link-btn">Email Us Your Requirements</a>
+
     <p class="mgc-response-note">All serious site enquiries receive a response within 4 business hours.<br>Maa Guru Enterprises · GST Registered · Lucknow, Uttar Pradesh</p>
   </section>
 
-  <!-- FOOTER -->
   <footer class="mgc-footer">
     <p>
       <strong>Maa Guru Commercial</strong> · Maa Guru Enterprises (GST Registered)<br>
       Lucknow · Varanasi · Ayodhya · East Uttar Pradesh<br>
-      <span class="copy">© 2025 Maa Guru Enterprises. All rights reserved.</span>
+      <span class="copy">© 2026 Maa Guru Enterprises. All rights reserved.</span>
     </p>
   </footer>
 
-</div><!-- end .mgc-site -->
-
-</body>
+</div></body>
 </html>
