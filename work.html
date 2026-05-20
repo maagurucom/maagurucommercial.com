@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Work | Maa Guru Commercial</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Open Sans', sans-serif;
+    color: #2D3748;
+    background: #F5F3EF;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .mgc-site {
+    max-width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 0 40px rgba(0,0,0,0.12);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  /* NAV */
+  .mgc-nav {
+    background: #0B1F3A;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 58px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .mgc-logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 0.04em;
+    line-height: 1.2;
+    text-decoration: none;
+  }
+  .mgc-logo span {
+    display: block;
+    font-size: 9px;
+    font-weight: 500;
+    color: #CBD5E1;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+  
+  /* COMING SOON SECTION */
+  .mgc-coming-soon {
+    background: #0B1F3A;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 28px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .mgc-coming-soon::before {
+    content: '';
+    position: absolute;
+    left: -70px;
+    bottom: -70px;
+    width: 280px;
+    height: 280px;
+    border: 1px solid rgba(184,134,11,0.18);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  .mgc-icon-wrap {
+    width: 64px;
+    height: 64px;
+    background: rgba(184,134,11,0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    border: 1px solid rgba(184,134,11,0.3);
+  }
+  .mgc-icon-wrap svg {
+    width: 32px;
+    height: 32px;
+    fill: #B8860B;
+  }
+  .mgc-coming-soon h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #fff;
+    line-height: 1.28;
+    margin-bottom: 16px;
+  }
+  .mgc-coming-soon p {
+    font-size: 14px;
+    color: #94A3B8;
+    line-height: 1.75;
+    margin-bottom: 32px;
+    max-width: 400px;
+  }
+  .mgc-btn-primary {
+    background: #B8860B;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 13px 24px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  .mgc-btn-primary:hover { background: #8F6409; }
+
+  /* FOOTER */
+  .mgc-footer {
+    background: #060F1D;
+    padding: 24px 28px;
+    text-align: center;
+  }
+  .mgc-footer p {
+    font-size: 11px;
+    color: #94A3B8;
+    line-height: 2;
+  }
+  .mgc-footer strong { color: #B8860B; font-weight: 600; }
+  .mgc-footer .copy { color: #64748B; }
+</style>
+</head>
+<body>
+
+<div class="mgc-site">
+
+  <nav class="mgc-nav">
+    <a href="index.html" class="mgc-logo">
+      MAA GURU COMMERCIAL
+      <span>East UP's Leasing Specialists</span>
+    </a>
+  </nav>
+
+  <section class="mgc-coming-soon">
+    <div class="mgc-icon-wrap">
+      <svg viewBox="0 0 24 24">
+        <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm1-13h-2v6l5.25 3.15.75-1.23-4-2.37V7z"/>
+      </svg>
+    </div>
+    <h1>Case Studies <br>Coming Soon</h1>
+    <p>We are currently compiling our latest high-profile leasing deals across East UP. Check back soon to view our portfolio.</p>
+    
+    <a href="index.html" class="mgc-btn-primary">Return to Homepage</a>
+  </section>
+
+  <footer class="mgc-footer">
+    <p>
+      <strong>Maa Guru Commercial</strong> · Maa Guru Enterprises (GST Registered)<br>
+      Lucknow · Varanasi · Ayodhya · East Uttar Pradesh<br>
+      <span class="copy">© 2026 Maa Guru Enterprises. All rights reserved.</span>
+    </p>
+  </footer>
+
+</div>
+
+</body>
+</html>
