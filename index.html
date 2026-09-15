@@ -3,544 +3,361 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Maa Guru Commercial | Commercial Leasing in East UP</title>
-<meta name="description" content="East UP's commercial leasing specialists. We place national pharmacy, retail, q-commerce, jewellery, fashion, NBFC, QSR and office brands across Lucknow, Ayodhya, Varanasi and Prayagraj.">
+<title>Maa Guru Commercial — Commercial Leasing in East UP</title>
+<meta name="description" content="East UP's commercial leasing specialists. We place national pharmacy, retail, quick-commerce, jewellery, fashion, NBFC, QSR and office brands across Lucknow, Ayodhya, Varanasi and Prayagraj.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --navy:#0D1F3C; --navy-deep:#071328; --navy-soft:#13294f;
-  --gold:#C9A961; --gold-deep:#B08D42; --gold-bright:#E4C77E;
-  --teal:#1C6E68; --teal-glow:#2FA79E;
-  --ivory:#F5F0E6; --card:#FAF9F6; --line:#E6E1D8;
-  --ink:#22303F; --muted:#64748B; --on-dark:#A9B8CC; --wa:#25D366;
+  --navy:#0D1F3C;
+  --navy-deep:#091629;
+  --gold:#C9A961;
+  --gold-ink:#9A7A34;      /* deeper gold, legible on light */
+  --paper:#FAF9F5;
+  --paper-2:#F3F1EA;
+  --ink:#0D1F3C;
+  --muted:#5C6675;
+  --line:rgba(13,31,60,.12);
+  --line-soft:rgba(13,31,60,.07);
+  --on-dark:#B9C4D4;
+  --wa:#25D366;
+  --maxw:1160px;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
-body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--ivory);-webkit-font-smoothing:antialiased;}
-.site{max-width:1240px;margin:0 auto;background:#fff;box-shadow:0 0 70px rgba(13,31,60,.16);overflow:hidden;}
+body{font-family:'Montserrat',sans-serif;color:var(--ink);background:var(--paper);
+  -webkit-font-smoothing:antialiased;line-height:1.6;font-size:16px;}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
 
-/* NAV */
-.nav{background:var(--navy);height:62px;display:flex;align-items:center;justify-content:space-between;
-  padding:0 22px;position:sticky;top:0;z-index:100;transition:box-shadow .3s,border-color .3s;border-bottom:1px solid transparent;}
-.nav.scrolled{box-shadow:0 8px 26px rgba(7,19,40,.4);border-bottom-color:rgba(201,169,97,.3);}
-.logo{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:14px;color:#fff;letter-spacing:.04em;text-decoration:none;line-height:1.15;}
-.logo b{display:flex;align-items:center;gap:8px;font-weight:700;}
-.logo b::before{content:'';width:7px;height:7px;background:var(--gold);border-radius:50%;box-shadow:0 0 0 3px rgba(201,169,97,.22);}
-.logo span{display:block;font-size:9px;font-weight:500;color:var(--gold);letter-spacing:.2em;text-transform:uppercase;margin:3px 0 0 15px;}
-.nav-cta{background:var(--gold);color:var(--navy);font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:11px;
-  padding:9px 16px;border-radius:5px;border:none;cursor:pointer;letter-spacing:.04em;display:flex;align-items:center;gap:6px;transition:.2s;}
-.nav-cta:hover{background:var(--gold-bright);transform:translateY(-1px);}
-.nav-cta .wa{fill:var(--navy);width:16px;height:16px;}
+h1,h2,h3,.serif{font-family:'Playfair Display',serif;font-weight:600;letter-spacing:-.01em;}
 
-/* HERO */
-.hero{position:relative;overflow:hidden;
-  background:linear-gradient(160deg, var(--navy) 0%, var(--navy-deep) 100%);
-  padding:44px 22px 40px;}
-.hero-layers{position:absolute;inset:0;z-index:1;pointer-events:none;overflow:hidden;}
-.pl{position:absolute;left:0;right:0;will-change:transform;}
-.pl-glow{top:-10%;height:80%;background:
-  radial-gradient(50% 60% at 78% 20%, rgba(47,167,158,.22) 0%, transparent 60%),
-  radial-gradient(45% 55% at 12% 90%, rgba(201,169,97,.18) 0%, transparent 60%);}
-.pl-rings{top:-80px;right:-80px;left:auto;width:320px;height:320px;border:1px solid rgba(201,169,97,.18);border-radius:50%;}
-.pl-rings::after{content:'';position:absolute;inset:70px;border:1px solid rgba(201,169,97,.12);border-radius:50%;}
-.pl-sky{bottom:0;height:180px;opacity:.5;}
-.pl-sky svg{position:absolute;bottom:0;width:100%;height:100%;}
-.hero-grid{position:relative;z-index:3;display:grid;grid-template-columns:1fr;gap:20px;align-items:center;}
-.hero-copy{position:relative;z-index:3;}
-.eyebrow{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.14em;color:var(--gold);
-  text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:9px;}
-.eyebrow::before{content:'';width:22px;height:1.5px;background:var(--gold);}
-.hero h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:30px;line-height:1.18;color:#fff;letter-spacing:-.01em;margin-bottom:14px;}
-.hero h1 em{font-style:normal;color:var(--gold);}
-.hero-tag{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--gold-bright);margin-bottom:16px;display:flex;align-items:center;gap:10px;}
-.hero-tag::before{content:'';width:30px;height:1px;background:linear-gradient(90deg,var(--gold),transparent);}
-.hero-copy p.lead{font-size:13.5px;line-height:1.75;color:var(--on-dark);max-width:540px;margin-bottom:24px;}
-.hero-ctas{display:flex;gap:11px;flex-wrap:wrap;margin-bottom:26px;}
-.btn-primary{background:var(--gold);color:var(--navy);font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:12.5px;
-  padding:14px 22px;border-radius:6px;border:none;cursor:pointer;letter-spacing:.03em;display:flex;align-items:center;gap:8px;
-  min-height:48px;box-shadow:0 8px 22px rgba(201,169,97,.3);transition:.2s;}
-.btn-primary:hover{background:var(--gold-bright);transform:translateY(-2px);}
-.btn-primary .wa{fill:var(--navy);width:17px;height:17px;}
-.btn-ghost{background:transparent;color:#fff;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:12.5px;
-  padding:14px 22px;border-radius:6px;border:1px solid rgba(255,255,255,.26);cursor:pointer;min-height:48px;transition:.2s;}
-.btn-ghost:hover{border-color:var(--gold);background:rgba(201,169,97,.08);}
-.hero-stats{display:flex;gap:0;background:rgba(255,255,255,.05);border:1px solid rgba(201,169,97,.18);border-radius:10px;padding:16px 6px;}
-.hero-stats div{flex:1;text-align:center;border-right:1px solid rgba(255,255,255,.12);padding:0 5px;}
-.hero-stats div:last-child{border-right:none;}
-.hero-stats b{display:block;font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:700;color:var(--gold);}
-.hero-stats span{font-size:7.5px;color:var(--on-dark);text-transform:uppercase;letter-spacing:.1em;}
+/* section rule device */
+.rule{width:44px;height:2px;background:var(--gold);margin-bottom:20px;}
 
-/* 3D STAGE */
-.stage{position:relative;width:100%;height:400px;z-index:2;}
-.stage canvas{display:block;width:100%!important;height:100%!important;}
-.leaders{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible;}
-.tag{position:absolute;z-index:4;max-width:186px;background:rgba(9,18,34,.62);backdrop-filter:blur(9px);
-  border:1px solid rgba(201,169,97,.4);border-radius:10px;padding:9px 12px;box-shadow:0 14px 34px rgba(0,0,0,.4);}
-.tag h4{font-family:'Space Grotesk',sans-serif;font-size:11px;font-weight:700;color:#fff;margin-bottom:2px;}
-.tag p{font-size:10px;color:var(--gold-bright);line-height:1.4;}
-.tag.t1{left:2%;top:20%;} .tag.t2{left:2%;bottom:14%;} .tag.t3{right:2%;top:16%;} .tag.t4{right:2%;bottom:16%;}
-.stage-hint{position:absolute;left:50%;bottom:6px;transform:translateX(-50%);font-family:'IBM Plex Mono',monospace;
-  font-size:9px;color:rgba(169,184,204,.7);letter-spacing:.1em;z-index:4;}
-.stage-fallback{display:none;}
+/* ── NAV ── */
+.nav{position:sticky;top:0;z-index:100;background:rgba(250,249,245,.82);
+  backdrop-filter:saturate(150%) blur(10px);border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s;}
+.nav.scrolled{border-bottom-color:var(--line);box-shadow:0 6px 24px rgba(13,31,60,.05);}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:70px;}
+.brand{text-decoration:none;line-height:1;}
+.brand .name{font-family:'Playfair Display',serif;font-weight:600;font-size:18px;color:var(--navy);letter-spacing:.005em;}
+.brand .tag{display:block;font-family:'Montserrat',sans-serif;font-weight:500;font-size:10px;color:var(--gold-ink);
+  letter-spacing:.24em;text-transform:uppercase;margin-top:5px;}
+.nav-cta{background:var(--navy);color:#fff;font-family:'Montserrat',sans-serif;font-weight:600;font-size:13px;
+  padding:11px 18px;border-radius:4px;border:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:background .2s,transform .2s;}
+.nav-cta:hover{background:var(--navy-deep);transform:translateY(-1px);}
+.nav-cta .wa{width:15px;height:15px;fill:var(--gold);}
 
-/* RIBBON */
-.ribbon{background:var(--navy-deep);display:flex;flex-wrap:wrap;justify-content:center;gap:10px 24px;padding:14px 22px;position:relative;z-index:5;}
-.ribbon span{display:flex;align-items:center;gap:8px;font-family:'Space Grotesk',sans-serif;font-size:10px;font-weight:600;
-  color:#D7DEE8;letter-spacing:.05em;text-transform:uppercase;}
-.ribbon svg{width:14px;height:14px;fill:none;stroke:var(--gold);stroke-width:2.2;}
-.divider{height:3px;background:linear-gradient(90deg,var(--gold),var(--teal) 60%, var(--navy));}
+/* ── HERO ── */
+.hero{padding:76px 0 68px;}
+.hero-grid{display:grid;grid-template-columns:1fr;gap:44px;align-items:center;}
+.kicker{font-family:'Montserrat',sans-serif;font-weight:500;font-size:13px;color:var(--muted);margin-bottom:22px;}
+.kicker::before{content:'';display:inline-block;width:26px;height:1px;background:var(--gold);vertical-align:middle;margin-right:12px;}
+.hero h1{font-size:38px;line-height:1.14;color:var(--navy);margin-bottom:22px;max-width:16ch;}
+.hero .lead{font-size:16px;color:var(--muted);max-width:52ch;margin-bottom:32px;line-height:1.7;}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;}
+.btn{font-family:'Montserrat',sans-serif;font-weight:600;font-size:14px;padding:14px 22px;border-radius:4px;
+  cursor:pointer;display:inline-flex;align-items:center;gap:9px;min-height:50px;text-decoration:none;transition:background .2s,color .2s,transform .2s,border-color .2s;}
+.btn-primary{background:var(--navy);color:#fff;border:1px solid var(--navy);}
+.btn-primary:hover{background:var(--navy-deep);transform:translateY(-2px);}
+.btn-primary .wa{width:17px;height:17px;fill:var(--gold);}
+.btn-ghost{background:transparent;color:var(--navy);border:1px solid var(--line);}
+.btn-ghost:hover{border-color:var(--navy);}
 
-/* SECTIONS */
-.section{padding:50px 22px;position:relative;}
-.slabel{font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;color:var(--gold-deep);letter-spacing:.14em;
-  text-transform:uppercase;margin-bottom:10px;display:inline-flex;align-items:center;gap:9px;}
-.slabel::before{content:'';width:20px;height:1.5px;background:var(--gold-deep);}
-.section h2{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:22px;color:var(--navy);line-height:1.25;letter-spacing:-.01em;margin-bottom:26px;}
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s cubic-bezier(.2,.7,.2,1),transform .6s cubic-bezier(.2,.7,.2,1);}
+/* fact sheet */
+.factsheet{border-top:2px solid var(--navy);}
+.factsheet .fs-label{font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--gold-ink);padding:16px 0 10px;}
+.fs-row{display:flex;align-items:baseline;justify-content:space-between;gap:16px;
+  padding:18px 0;border-bottom:1px solid var(--line-soft);}
+.fs-row:last-child{border-bottom:none;}
+.fs-num{font-family:'Playfair Display',serif;font-weight:600;font-size:36px;color:var(--navy);line-height:1;}
+.fs-num small{font-size:18px;color:var(--gold-ink);margin-left:2px;}
+.fs-desc{font-size:13px;color:var(--muted);text-align:right;max-width:20ch;}
+
+/* ── TRUST STRIP ── */
+.trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--paper-2);}
+.trust-in{display:flex;flex-wrap:wrap;gap:14px 34px;padding:18px 0;}
+.trust span{display:inline-flex;align-items:center;gap:9px;font-size:13px;font-weight:500;color:var(--navy);}
+.trust svg{width:16px;height:16px;fill:none;stroke:var(--gold-ink);stroke-width:2;flex-shrink:0;}
+
+/* ── SECTION ── */
+.section{padding:80px 0;}
+.section > .rule{margin-bottom:18px;}
+.section h2{font-size:28px;color:var(--navy);line-height:1.22;margin-bottom:14px;max-width:22ch;}
+.section .sub{font-size:15px;color:var(--muted);max-width:56ch;margin-bottom:44px;line-height:1.7;}
+
+/* specialisms — hairline list, not cards */
+.spec{display:grid;grid-template-columns:1fr;gap:0;border-top:1px solid var(--line);}
+.spec .item{padding:24px 0;border-bottom:1px solid var(--line-soft);}
+.spec .item h3{font-family:'Montserrat',sans-serif;font-weight:700;font-size:15px;color:var(--navy);margin-bottom:6px;}
+.spec .item p{font-size:13.5px;color:var(--muted);line-height:1.6;max-width:42ch;}
+
+/* coverage */
+.cities{display:grid;grid-template-columns:1fr;gap:0;border-top:1px solid var(--line);}
+.city{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start;padding:26px 0;border-bottom:1px solid var(--line-soft);}
+.city .cn{font-family:'Playfair Display',serif;font-weight:600;font-size:20px;color:var(--navy);min-width:130px;}
+.city .cd{font-size:13.5px;color:var(--muted);line-height:1.65;max-width:60ch;}
+.city .cn small{display:block;font-family:'Montserrat',sans-serif;font-weight:600;font-size:10px;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--gold-ink);margin-top:6px;}
+
+/* selected work */
+.work-bg{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+.deals{display:grid;grid-template-columns:1fr;gap:22px;}
+.deal{background:#fff;border:1px solid var(--line);border-radius:5px;padding:26px 24px;}
+.deal .top{display:flex;align-items:center;gap:12px;margin-bottom:14px;flex-wrap:wrap;}
+.deal .cat{font-family:'Montserrat',sans-serif;font-weight:700;font-size:14px;color:var(--navy);}
+.deal .badge{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+  padding:4px 9px;border-radius:3px;border:1px solid var(--line);color:var(--muted);}
+.deal .badge.signed{background:var(--navy);color:var(--gold);border-color:var(--navy);}
+.deal p{font-size:13.5px;color:var(--muted);line-height:1.65;}
+
+/* ── DARK ANCHOR ── */
+.anchor{background:var(--navy);color:#fff;}
+.anchor .rule{background:var(--gold);}
+.anchor h2{color:#fff;}
+.anchor .sub{color:var(--on-dark);}
+.diffs{display:grid;grid-template-columns:1fr;gap:0;border-top:1px solid rgba(201,169,97,.28);}
+.diff{padding:28px 0;border-bottom:1px solid rgba(255,255,255,.08);}
+.diff h3{font-family:'Montserrat',sans-serif;font-weight:700;font-size:15px;color:var(--gold);margin-bottom:8px;
+  display:flex;align-items:baseline;gap:12px;}
+.diff h3 i{font-family:'Playfair Display',serif;font-style:normal;font-size:13px;color:rgba(201,169,97,.55);}
+.diff p{font-size:14px;color:var(--on-dark);line-height:1.65;max-width:60ch;}
+
+/* ── CONTACT ── */
+.contact .sub{margin-bottom:32px;}
+.contact-actions{display:flex;flex-direction:column;gap:12px;max-width:440px;}
+.wa-btn{background:var(--navy);color:#fff;font-family:'Montserrat',sans-serif;font-weight:600;font-size:15px;
+  padding:17px 22px;border-radius:5px;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:11px;
+  min-height:56px;transition:background .2s,transform .2s;}
+.wa-btn:hover{background:var(--navy-deep);transform:translateY(-2px);}
+.wa-btn .wa{width:19px;height:19px;fill:var(--gold);}
+.email-btn{background:transparent;color:var(--navy);font-family:'Montserrat',sans-serif;font-weight:600;font-size:14px;
+  padding:15px 22px;border-radius:5px;border:1px solid var(--line);cursor:pointer;text-decoration:none;
+  display:flex;align-items:center;justify-content:center;min-height:52px;transition:border-color .2s;}
+.email-btn:hover{border-color:var(--navy);}
+.contact .note{font-size:13px;color:var(--muted);margin-top:20px;line-height:1.7;max-width:440px;}
+
+/* ── FOOTER ── */
+.footer{background:var(--navy-deep);padding:44px 0;}
+.footer .name{font-family:'Playfair Display',serif;font-weight:600;font-size:17px;color:#fff;}
+.footer .tag{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin:6px 0 18px;}
+.footer p{font-size:13px;color:var(--on-dark);line-height:1.9;}
+.footer .fine{font-size:12px;color:#5A6880;margin-top:16px;}
+
+/* floating WA */
+.float-wa{position:fixed;right:20px;bottom:20px;z-index:200;width:54px;height:54px;border-radius:50%;
+  background:var(--wa);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 24px rgba(37,211,102,.34);transition:transform .2s;}
+.float-wa:hover{transform:scale(1.06);}
+.float-wa svg{width:28px;height:28px;fill:#fff;}
+
+button:focus-visible,a:focus-visible{outline:2px solid var(--gold-ink);outline-offset:3px;border-radius:2px;}
+
+/* reveal (single quiet entrance) */
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease;}
 .reveal.in{opacity:1;transform:none;}
-.reveal.d1{transition-delay:.08s;} .reveal.d2{transition-delay:.16s;} .reveal.d3{transition-delay:.24s;}
 
-/* SERVICES */
-.grid{display:grid;grid-template-columns:1fr;gap:14px;}
-.svc{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:9px;padding:18px 16px;
-  transition:transform .22s,box-shadow .22s;}
-.svc:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(13,31,60,.12);}
-.svc h3{font-family:'Space Grotesk',sans-serif;font-size:12.5px;font-weight:700;color:var(--navy);margin-bottom:7px;}
-.svc p{font-size:11.5px;color:var(--muted);line-height:1.6;}
-
-/* WORK */
-.cred-bg{background:var(--ivory);}
-.deal{background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px;transition:transform .22s,box-shadow .22s;}
-.deal:hover{transform:translateY(-4px);box-shadow:0 18px 38px rgba(13,31,60,.12);}
-.deal .brand{font-family:'Space Grotesk',sans-serif;font-size:11.5px;font-weight:700;color:var(--navy);text-transform:uppercase;
-  letter-spacing:.05em;display:flex;align-items:center;gap:8px;margin-bottom:12px;flex-wrap:wrap;}
-.deal .badge{background:var(--navy);color:var(--gold);font-size:8.5px;font-weight:700;padding:4px 9px;border-radius:3px;letter-spacing:.06em;}
-.deal .badge.live{background:var(--teal);color:#eafffd;}
-.deal p{font-size:12px;color:#4A5568;line-height:1.65;margin-bottom:12px;}
-.deal .why{font-size:11px;color:var(--gold-deep);line-height:1.55;padding-top:10px;border-top:1px dashed var(--line);}
-
-/* CITIES */
-.cities{display:grid;grid-template-columns:1fr;gap:12px;}
-.city{display:flex;gap:14px;padding:18px;background:#fff;border:1px solid var(--line);border-radius:10px;transition:transform .22s,box-shadow .22s;}
-.city:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(13,31,60,.1);}
-.city .dot{width:9px;height:9px;background:var(--gold);border-radius:50%;margin-top:6px;flex-shrink:0;box-shadow:0 0 0 4px rgba(201,169,97,.16);}
-.city h3{font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:700;color:var(--navy);margin-bottom:5px;}
-.city p{font-size:11.5px;color:var(--muted);line-height:1.6;}
-
-/* WHY */
-.why-bg{position:relative;overflow:hidden;background:linear-gradient(160deg,var(--navy),var(--navy-deep));}
-.why-bg .par-glow{position:absolute;inset:-20% 0;z-index:0;pointer-events:none;will-change:transform;
-  background:radial-gradient(50% 40% at 100% 0%, rgba(47,167,158,.14),transparent 55%),radial-gradient(45% 40% at 0% 100%, rgba(201,169,97,.12),transparent 55%);}
-.why-bg .slabel,.why-bg h2,.why-bg .diff-grid{position:relative;z-index:1;}
-.why-bg .slabel{color:var(--gold);} .why-bg .slabel::before{background:var(--gold);} .why-bg h2{color:#fff;}
-.diff{border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:20px 18px;background:rgba(255,255,255,.04);
-  backdrop-filter:blur(6px);transition:.22s;}
-.diff:hover{background:rgba(201,169,97,.06);border-color:rgba(201,169,97,.3);transform:translateY(-4px);}
-.diff .ic{width:36px;height:36px;border-radius:8px;background:rgba(201,169,97,.12);display:flex;align-items:center;justify-content:center;margin-bottom:12px;}
-.diff .ic svg{width:18px;height:18px;fill:none;stroke:var(--gold);stroke-width:2.2;}
-.diff h3{font-family:'Space Grotesk',sans-serif;font-size:12.5px;font-weight:700;color:#fff;margin-bottom:7px;}
-.diff p{font-size:11.5px;color:var(--on-dark);line-height:1.6;}
-
-/* CONTACT */
-.contact-bg{background:#fff;border-top:1px solid var(--line);}
-.contact-bg p.intro{font-size:13.5px;color:var(--muted);line-height:1.75;max-width:600px;margin-bottom:24px;}
-.wa-btn{background:var(--wa);color:#fff;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:13.5px;padding:17px 24px;border-radius:7px;
-  border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;width:100%;max-width:460px;margin-bottom:12px;
-  min-height:54px;box-shadow:0 8px 22px rgba(37,211,102,.26);transition:.2s;}
-.wa-btn:hover{background:#1DA851;transform:translateY(-2px);}
-.wa-btn .wa{fill:#fff;width:20px;height:20px;}
-.email-btn{max-width:460px;width:100%;justify-content:center;background:transparent;color:var(--navy);font-family:'Space Grotesk',sans-serif;
-  font-weight:700;font-size:12px;padding:13px 22px;border-radius:7px;border:1.5px solid var(--navy);cursor:pointer;text-decoration:none;
-  display:flex;align-items:center;min-height:48px;transition:.2s;}
-.email-btn:hover{background:var(--navy);color:#fff;}
-.note{font-size:11.5px;color:var(--muted);margin-top:16px;line-height:1.7;max-width:460px;}
-.note b{color:var(--navy);}
-.footer{background:var(--navy-deep);padding:30px 22px;text-align:center;}
-.footer p{font-size:11.5px;color:var(--on-dark);line-height:2;}
-.footer b{color:var(--gold);font-family:'Space Grotesk',sans-serif;letter-spacing:.03em;}
-.footer .c{color:#5C6B80;}
-
-.float-wa{position:fixed;right:20px;bottom:20px;z-index:200;width:56px;height:56px;border-radius:50%;background:var(--wa);border:none;
-  cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 22px rgba(37,211,102,.42);transition:transform .2s;}
-.float-wa:hover{transform:scale(1.08);}
-.float-wa svg{width:30px;height:30px;fill:#fff;}
-.float-wa::after{content:'';position:absolute;inset:0;border-radius:50%;border:2px solid var(--wa);animation:pulse 2.4s ease-out infinite;}
-@keyframes pulse{0%{transform:scale(1);opacity:.7;}100%{transform:scale(1.6);opacity:0;}}
-button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
-
-@media (min-width:680px){
-  .grid{grid-template-columns:1fr 1fr;} .cities{grid-template-columns:1fr 1fr;}
-  .deals-grid{grid-template-columns:1fr 1fr;} .diff-grid{grid-template-columns:1fr 1fr;}
+@media (min-width:720px){
+  .hero{padding:100px 0 84px;}
+  .hero-grid{grid-template-columns:1.15fr .85fr;gap:64px;}
+  .hero h1{font-size:52px;}
+  .hero .lead{font-size:17px;}
+  .spec{grid-template-columns:1fr 1fr;column-gap:56px;}
+  .spec .item{padding:26px 0;}
+  .deals{grid-template-columns:1fr 1fr;}
+  .diffs{grid-template-columns:1fr 1fr;column-gap:56px;}
+  .section h2{font-size:34px;}
+  .fs-num{font-size:42px;}
 }
-@media (min-width:920px){
-  .nav{padding:0 40px;height:68px;} .section{padding:78px 56px;}
-  .hero{padding:70px 56px 60px;}
-  .hero-grid{grid-template-columns:0.92fr 1.08fr;gap:36px;}
-  .hero h1{font-size:42px;line-height:1.14;} .hero-copy p.lead{font-size:15px;}
-  .stage{height:560px;}
-  .hero-stats b{font-size:23px;} .hero-stats span{font-size:8.5px;}
-  .section h2{font-size:30px;margin-bottom:34px;}
-  .grid{grid-template-columns:repeat(3,1fr);} .cities{grid-template-columns:repeat(4,1fr);}
-  .deals-grid{grid-template-columns:repeat(2,1fr);} .diff-grid{grid-template-columns:repeat(4,1fr);}
-}
-@media (max-width:919px){
-  .tag,.leaders{display:none;}
-  .stage-fallback{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px;}
-  .stage-fallback .fb{background:rgba(255,255,255,.05);border:1px solid rgba(201,169,97,.2);border-radius:9px;padding:12px;}
-  .stage-fallback h4{font-family:'Space Grotesk',sans-serif;font-size:11px;color:#fff;margin-bottom:3px;}
-  .stage-fallback p{font-size:10px;color:var(--gold-bright);line-height:1.4;}
+@media (min-width:1000px){
+  .hero h1{font-size:58px;}
+  .diffs{grid-template-columns:1fr 1fr;}
 }
 @media (prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto;} .reveal{opacity:1;transform:none;transition:none;} .float-wa::after{animation:none;}
+  html{scroll-behavior:auto;}
+  .reveal{opacity:1;transform:none;transition:none;}
 }
 </style>
 </head>
 <body>
-<div class="site">
 
-  <nav class="nav" id="nav">
-    <a href="index.html" class="logo"><b>MAA GURU COMMERCIAL</b><span>Site to Signature</span></a>
+<nav class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="index.html" class="brand">
+      <span class="name">Maa Guru Commercial</span>
+      <span class="tag">Site to Signature</span>
+    </a>
     <button class="nav-cta" onclick="wa('Hi%2C%20I%27m%20looking%20for%20a%20commercial%20space%20in%20East%20UP.')">
       <svg class="wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.025.507 3.934 1.397 5.605L0 24l6.545-1.371A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.013-1.377l-.36-.213-3.727.979 1.002-3.645-.234-.375A9.818 9.818 0 1112 21.818z"/></svg>
-      WhatsApp Us</button>
-  </nav>
-
-  <section class="hero">
-    <div class="hero-layers" aria-hidden="true">
-      <div class="pl pl-glow" data-speed="0.06"></div>
-      <div class="pl pl-rings" data-speed="0.14"></div>
-      <div class="pl pl-sky" data-speed="-0.05">
-        <svg viewBox="0 0 1200 180" preserveAspectRatio="none">
-          <g fill="#0a1c33">
-            <rect x="0" y="90" width="70" height="90"/><rect x="80" y="60" width="52" height="120"/>
-            <rect x="150" y="110" width="60" height="70"/><rect x="225" y="45" width="46" height="135"/>
-            <rect x="290" y="95" width="70" height="85"/><rect x="380" y="70" width="40" height="110"/>
-            <rect x="440" y="120" width="64" height="60"/><rect x="520" y="55" width="50" height="125"/>
-            <rect x="590" y="100" width="60" height="80"/><rect x="670" y="40" width="44" height="140"/>
-            <rect x="735" y="105" width="70" height="75"/><rect x="820" y="72" width="46" height="108"/>
-            <rect x="885" y="118" width="60" height="62"/><rect x="960" y="50" width="50" height="130"/>
-            <rect x="1030" y="98" width="66" height="82"/><rect x="1110" y="66" width="44" height="114"/>
-          </g>
-        </svg>
-      </div>
-    </div>
-
-    <div class="hero-grid">
-      <div class="hero-copy">
-        <div class="eyebrow">Commercial Real Estate — East UP</div>
-        <h1>We place <em>national brands</em> in East UP's best spaces.</h1>
-        <div class="hero-tag">Site to Signature</div>
-        <p class="lead">One building, every format we handle — ground-floor pharmacy, QSR and cafés; quick-commerce dark stores; jewellery, fashion and NBFC showrooms; Grade-A offices and airport-zone retail. We find the expanding brand first, then source the space that fits.</p>
-        <div class="hero-ctas">
-          <button class="btn-primary" onclick="wa('Hi%2C%20I%27m%20looking%20for%20a%20commercial%20space%20in%20East%20UP.')">
-            <svg class="wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.025.507 3.934 1.397 5.605L0 24l6.545-1.371A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.013-1.377l-.36-.213-3.727.979 1.002-3.645-.234-.375A9.818 9.818 0 1112 21.818z"/></svg>
-            WhatsApp Us Now</button>
-          <button class="btn-ghost" onclick="window.location.href='work.html'">View Our Work</button>
-        </div>
-        <div class="hero-stats">
-          <div><b>04</b><span>Cities</span></div>
-          <div><b>40</b><span>National Brands</span></div>
-          <div><b>55K</b><span>Sq Ft Dark-Store</span></div>
-          <div><b>9+</b><span>Formats</span></div>
-        </div>
-      </div>
-
-      <div class="stage" id="stage">
-        <svg class="leaders" id="leaders"></svg>
-        <div class="tag t1"><h4>Retail · Pharmacy · QSR &amp; Café</h4><p>High-footfall ground floors</p></div>
-        <div class="tag t2"><h4>Quick-Commerce Dark Stores</h4><p>55,000+ sq ft placed</p></div>
-        <div class="tag t3"><h4>Jewellery · Fashion · NBFC</h4><p>High-catchment showrooms</p></div>
-        <div class="tag t4"><h4>Grade-A Offices &amp; Airport Retail</h4><p>Premium destination zones</p></div>
-        <div class="stage-hint">&#9680; drag to rotate</div>
-        <div class="stage-fallback">
-          <div class="fb"><h4>Retail · Pharmacy · QSR</h4><p>Ground-floor footfall</p></div>
-          <div class="fb"><h4>Dark Stores</h4><p>55,000+ sq ft placed</p></div>
-          <div class="fb"><h4>Jewellery · Fashion · NBFC</h4><p>High-catchment</p></div>
-          <div class="fb"><h4>Offices &amp; Airport Retail</h4><p>Premium zones</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="ribbon">
-    <span><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>GST Registered</span>
-    <span><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>Direct Landlord Access</span>
-    <span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>4-Hour Response</span>
-    <span><svg viewBox="0 0 24 24"><path d="M12 21s-7-5.3-7-11a7 7 0 0114 0c0 5.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>East UP Focus</span>
+      WhatsApp us
+    </button>
   </div>
+</nav>
 
-  <div class="divider"></div>
-
-  <section class="section reveal">
-    <div class="slabel">Our Specialisms</div>
-    <h2>One firm. Every high-catchment format.</h2>
-    <div class="grid">
-      <div class="svc reveal"><h3>Retail &amp; Pharmacy</h3><p>Ground-floor, high-footfall units near hospital clusters and main commercial roads.</p></div>
-      <div class="svc reveal d1"><h3>Quick-Commerce Dark Stores</h3><p>Build-to-suit sites specced for q-commerce — access, power, loading and clear area.</p></div>
-      <div class="svc reveal d2"><h3>Jewellery &amp; Fashion Showrooms</h3><p>Prime high-street catchments for national jewellery and fashion brands.</p></div>
-      <div class="svc reveal"><h3>NBFC &amp; BFSI Branches</h3><p>Main-corridor branch and showroom space for financial-services brands.</p></div>
-      <div class="svc reveal d1"><h3>QSR &amp; Cafés</h3><p>Footfall-led units for national food &amp; beverage and quick-service formats.</p></div>
-      <div class="svc reveal d2"><h3>Offices, Premium &amp; Airport Retail</h3><p>Plug-and-play offices and destination-zone retail including airport corridors.</p></div>
-    </div>
-  </section>
-
-  <section class="section cred-bg reveal">
-    <div class="slabel">Past Work</div>
-    <h2>Brands we've placed on the ground.</h2>
-    <div class="grid deals-grid">
-      <div class="deal reveal">
-        <div class="brand">Quick-Commerce Dark Stores <span class="badge live">Signed</span></div>
-        <p>Build-to-suit dark-store sites sourced and closed for a national quick-commerce brand — 55,000+ sq ft placed across East UP, LOI to executed lease.</p>
-        <div class="why">A live, signed q-commerce programme — the hardest, highest-velocity category in the region.</div>
-      </div>
-      <div class="deal reveal d1">
-        <div class="brand">Jewellery &amp; Fashion <span class="badge">High-Street Retail</span></div>
-        <p>High-catchment placements for national jewellery and fashion showrooms on prime commercial high streets across the region.</p>
-        <div class="why">Flagship-grade requirements — frontage, visibility and footfall matched precisely.</div>
-      </div>
-      <div class="deal reveal d2">
-        <div class="brand">NBFC &amp; BFSI <span class="badge">Financial Services</span></div>
-        <p>Branch and showroom space for NBFC and financial-services brands on main commercial corridors, sized and located for walk-in footfall.</p>
-        <div class="why">Compliance-heavy tenants who need the right corridor, not just any unit.</div>
-      </div>
-      <div class="deal reveal">
-        <div class="brand">Airport Retail &amp; Offices <span class="badge">Premium</span></div>
-        <p>Airport-zone premium retail and Grade-A office sourcing for expanding brands and teams across East UP's fastest-growing markets.</p>
-        <div class="why">Airport retail is the highest-credibility category in commercial leasing.</div>
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy reveal">
+      <p class="kicker">Commercial leasing across East Uttar Pradesh</p>
+      <h1>Placing national brands in East UP's best commercial spaces.</h1>
+      <p class="lead">We find the expanding brand first, then source the space that fits — pharmacy, quick-commerce, jewellery, fashion, NBFC, QSR and Grade-A offices across Lucknow, Ayodhya, Varanasi and Prayagraj.</p>
+      <div class="cta-row">
+        <button class="btn btn-primary" onclick="wa('Hi%2C%20I%27m%20looking%20for%20a%20commercial%20space%20in%20East%20UP.')">
+          <svg class="wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.025.507 3.934 1.397 5.605L0 24l6.545-1.371A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.013-1.377l-.36-.213-3.727.979 1.002-3.645-.234-.375A9.818 9.818 0 1112 21.818z"/></svg>
+          Start on WhatsApp
+        </button>
+        <a class="btn btn-ghost" href="mailto:mgc@themgc.in?subject=Requirement%20for%20East%20UP">Email your requirement</a>
       </div>
     </div>
-  </section>
 
-  <section class="section reveal">
-    <div class="slabel">Coverage</div>
-    <h2>Four cities. One specialist firm.</h2>
-    <div class="cities">
-      <div class="city reveal"><div class="dot"></div><div><h3>Lucknow</h3><p>HQ and primary market. Startup ecosystem, hospital clusters and expanding retail corridors.</p></div></div>
-      <div class="city reveal d1"><div class="dot"></div><div><h3>Ayodhya</h3><p>Fastest-growing city post Ram Mandir. Airport zone, dark stores and national retail expansion.</p></div></div>
-      <div class="city reveal d2"><div class="dot"></div><div><h3>Varanasi</h3><p>High footfall from medical tourism and pilgrimage. Pharmacy, diagnostics and healthcare retail.</p></div></div>
-      <div class="city reveal d3"><div class="dot"></div><div><h3>Prayagraj</h3><p>Major regional hub with a large catchment and rising demand from national retail and q-commerce brands.</p></div></div>
-    </div>
-  </section>
+    <aside class="factsheet reveal">
+      <div class="fs-label">By the numbers</div>
+      <div class="fs-row"><span class="fs-num">04</span><span class="fs-desc">Cities covered across East UP</span></div>
+      <div class="fs-row"><span class="fs-num">40</span><span class="fs-desc">National brands placed on the ground</span></div>
+      <div class="fs-row"><span class="fs-num">55K<small>+</small></span><span class="fs-desc">Sq ft of dark-store space placed</span></div>
+      <div class="fs-row"><span class="fs-num">9<small>+</small></span><span class="fs-desc">Retail &amp; commercial formats handled</span></div>
+    </aside>
+  </div>
+</header>
 
-  <section class="section why-bg reveal">
-    <div class="par-glow" data-speed="0.05"></div>
-    <div class="slabel">Why Us</div>
-    <h2>Why expansion managers choose Maa Guru Commercial</h2>
-    <div class="grid diff-grid">
-      <div class="diff reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-5.3-7-11a7 7 0 0114 0c0 5.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div><h3>East UP Only</h3><p>We don't cover all of India. We cover this region better than anyone.</p></div>
-      <div class="diff reveal d1"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 2l2.4 5 5.6.8-4 3.9 1 5.3L12 19l-5 2.9 1-5.3-4-3.9 5.6-.8z"/></svg></div><h3>40 Brands Placed</h3><p>Across pharmacy, q-commerce, jewellery, fashion, NBFC, QSR and offices.</p></div>
-      <div class="diff reveal d2"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M10 21v-5h4v5"/></svg></div><h3>Direct Landlord Access</h3><p>No intermediary chains. Direct relationships with property owners.</p></div>
-      <div class="diff reveal d3"><div class="ic"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7z"/></svg></div><h3>GST Registered</h3><p>Fully compliant for corporate procurement and vendor onboarding.</p></div>
-    </div>
-  </section>
-
-  <section class="section contact-bg reveal">
-    <div class="slabel">Get In Touch</div>
-    <h2>Ready to expand to East UP?</h2>
-    <p class="intro">Share your city, format type and location preference. We'll respond with relevant options within 4 business hours.</p>
-    <button class="wa-btn" onclick="wa('Hi%2C%20I%27m%20looking%20for%20a%20commercial%20space%20in%20East%20UP.%20Please%20share%20available%20options.')">
-      <svg class="wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.025.507 3.934 1.397 5.605L0 24l6.545-1.371A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.013-1.377l-.36-.213-3.727.979 1.002-3.645-.234-.375A9.818 9.818 0 1112 21.818z"/></svg>
-      Start a Conversation on WhatsApp</button>
-    <a href="mailto:mgc@themgc.in" class="email-btn">Email Us Your Requirements</a>
-    <p class="note">All serious site enquiries receive a response within 4 business hours.<br><b>Maa Guru Commercial</b> · GST Registered · Lucknow, Uttar Pradesh</p>
-  </section>
-
-  <footer class="footer">
-    <p><b>Maa Guru Commercial</b> · GST Registered<br>Lucknow · Ayodhya · Varanasi · Prayagraj · East Uttar Pradesh<br>
-    <span class="c">© 2026 Maa Guru Commercial. All rights reserved.</span></p>
-  </footer>
+<!-- TRUST -->
+<div class="trust">
+  <div class="wrap trust-in">
+    <span><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>GST registered</span>
+    <span><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>Direct landlord access</span>
+    <span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Response within 4 business hours</span>
+    <span><svg viewBox="0 0 24 24"><path d="M12 21s-7-5.3-7-11a7 7 0 0114 0c0 5.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>East UP focus</span>
+  </div>
 </div>
 
-<button class="float-wa" aria-label="WhatsApp" onclick="wa('Hi%2C%20I%27m%20looking%20for%20a%20commercial%20space%20in%20East%20UP.')">
+<!-- SPECIALISMS -->
+<section class="section">
+  <div class="wrap">
+    <div class="rule reveal"></div>
+    <h2 class="reveal">One firm for every high-catchment format.</h2>
+    <p class="sub reveal">The categories that drive real leasing velocity in this region — sourced, matched and closed under one roof.</p>
+    <div class="spec">
+      <div class="item reveal"><h3>Retail &amp; pharmacy</h3><p>Ground-floor, high-footfall units near hospital clusters and main commercial roads.</p></div>
+      <div class="item reveal"><h3>Quick-commerce dark stores</h3><p>Build-to-suit sites specced for q-commerce — access, power, loading and clear area.</p></div>
+      <div class="item reveal"><h3>Jewellery &amp; fashion showrooms</h3><p>Prime high-street catchments for national jewellery and fashion brands.</p></div>
+      <div class="item reveal"><h3>NBFC &amp; BFSI branches</h3><p>Main-corridor branch and showroom space for financial-services brands.</p></div>
+      <div class="item reveal"><h3>QSR &amp; cafés</h3><p>Footfall-led units for national food, beverage and quick-service formats.</p></div>
+      <div class="item reveal"><h3>Offices &amp; airport-zone retail</h3><p>Plug-and-play Grade-A offices and destination-zone retail, including airport corridors.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- COVERAGE -->
+<section class="section" style="padding-top:0;">
+  <div class="wrap">
+    <div class="rule reveal"></div>
+    <h2 class="reveal">Four cities. One specialist firm.</h2>
+    <p class="sub reveal">We don't cover all of India. We cover this region better than anyone.</p>
+    <div class="cities">
+      <div class="city reveal"><div class="cn">Lucknow<small>Headquarters</small></div><div class="cd">Primary market. Startup ecosystem, hospital clusters and expanding retail corridors.</div></div>
+      <div class="city reveal"><div class="cn">Ayodhya<small>Fastest growing</small></div><div class="cd">Post-Ram Mandir growth. Airport zone, dark stores and national retail expansion.</div></div>
+      <div class="city reveal"><div class="cn">Varanasi<small>High footfall</small></div><div class="cd">Medical tourism and pilgrimage traffic. Pharmacy, diagnostics and healthcare retail.</div></div>
+      <div class="city reveal"><div class="cn">Prayagraj<small>Regional hub</small></div><div class="cd">Large catchment with rising demand from national retail and q-commerce brands.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SELECTED WORK -->
+<section class="work-bg">
+  <div class="section">
+    <div class="wrap">
+      <div class="rule reveal"></div>
+      <h2 class="reveal">Brands we've placed on the ground.</h2>
+      <p class="sub reveal">Selected work across the region. Figures are shown in aggregate.</p>
+      <div class="deals">
+        <div class="deal reveal">
+          <div class="top"><span class="cat">Quick-commerce dark stores</span></div>
+          <p>Build-to-suit dark-store sites sourced and closed for a national quick-commerce brand — 55,000+ sq ft placed across East UP.</p>
+        </div>
+        <div class="deal reveal">
+          <div class="top"><span class="cat">Jewellery &amp; fashion</span></div>
+          <p>High-catchment placements for national jewellery and fashion showrooms on prime commercial high streets — frontage, visibility and footfall matched to flagship requirements.</p>
+        </div>
+        <div class="deal reveal">
+          <div class="top"><span class="cat">NBFC &amp; BFSI</span></div>
+          <p>Branch and showroom space for NBFC and financial-services brands on main commercial corridors, sized and located for walk-in footfall.</p>
+        </div>
+        <div class="deal reveal">
+          <div class="top"><span class="cat">Airport retail &amp; offices</span></div>
+          <p>Airport-zone premium retail and Grade-A office sourcing for expanding brands and teams across East UP's fastest-growing markets.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DARK ANCHOR -->
+<section class="anchor">
+  <div class="section">
+    <div class="wrap">
+      <div class="rule reveal"></div>
+      <h2 class="reveal">Why expansion managers work with us.</h2>
+      <p class="sub reveal">We're built for one job: getting national brands into the right space in East UP, without the intermediary chain.</p>
+      <div class="diffs">
+        <div class="diff reveal"><h3>Demand-led, not listing-led</h3><p>We start from the expanding brand's requirement and source to fit — you see relevant options, not a listings dump.</p></div>
+        <div class="diff reveal"><h3>Direct landlord relationships</h3><p>No broker-to-broker chains. Direct access to owners means faster, cleaner negotiations.</p></div>
+        <div class="diff reveal"><h3>Regional depth</h3><p>Pharmacy, q-commerce, jewellery, fashion, NBFC, QSR and offices — placed across four East UP cities.</p></div>
+        <div class="diff reveal"><h3>Corporate-ready</h3><p>GST registered and set up for vendor onboarding, so procurement and paperwork don't slow the deal.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact">
+  <div class="wrap">
+    <div class="rule reveal"></div>
+    <h2 class="reveal">Ready to expand to East UP?</h2>
+    <p class="sub reveal">Share your city, format and location preference. We'll come back with relevant options within four business hours.</p>
+    <div class="contact-actions reveal">
+      <button class="wa-btn" onclick="wa('Hi%2C%20I%27m%20looking%20for%20a%20commercial%20space%20in%20East%20UP.%20Please%20share%20available%20options.')">
+        <svg class="wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.025.507 3.934 1.397 5.605L0 24l6.545-1.371A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.013-1.377l-.36-.213-3.727.979 1.002-3.645-.234-.375A9.818 9.818 0 1112 21.818z"/></svg>
+        Start a conversation on WhatsApp
+      </button>
+      <a class="email-btn" href="mailto:mgc@themgc.in?subject=Requirement%20for%20East%20UP">Email your requirements</a>
+    </div>
+    <p class="note reveal">All serious site enquiries receive a response within four business hours.<br>Maa Guru Commercial · GST registered · Lucknow, Uttar Pradesh</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="name">Maa Guru Commercial</div>
+    <div class="tag">Site to Signature</div>
+    <p>Lucknow · Ayodhya · Varanasi · Prayagraj — East Uttar Pradesh<br>
+       mgc@themgc.in · themgc.in</p>
+    <p class="fine">© 2026 Maa Guru Commercial. GST registered. All rights reserved.</p>
+  </div>
+</footer>
+
+<button class="float-wa" aria-label="Message us on WhatsApp" onclick="wa('Hi%2C%20I%27m%20looking%20for%20a%20commercial%20space%20in%20East%20UP.')">
   <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.025.507 3.934 1.397 5.605L0 24l6.545-1.371A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.013-1.377l-.36-.213-3.727.979 1.002-3.645-.234-.375A9.818 9.818 0 1112 21.818z"/></svg>
 </button>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
   var MGC_WA='918353969001';
   function wa(t){ window.open('https://wa.me/'+MGC_WA+'?text='+t,'_blank'); }
-  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   var nav=document.getElementById('nav');
+  window.addEventListener('scroll',function(){ nav.classList.toggle('scrolled', window.pageYOffset>8); },{passive:true});
 
-  // scroll reveal
-  (function(){
-    var els=document.querySelectorAll('.reveal');
-    if(reduce||!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
-    var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els=document.querySelectorAll('.reveal');
+  if(reduce||!('IntersectionObserver' in window)){
+    els.forEach(function(e){e.classList.add('in');});
+  }else{
+    var io=new IntersectionObserver(function(en){
+      en.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+    },{threshold:.14});
     els.forEach(function(e){io.observe(e);});
-  })();
-
-  // parallax layers (nav shadow + hero layers + section glow)
-  var parEls=[].slice.call(document.querySelectorAll('[data-speed]'));
-  var ticking=false;
-  function onScroll(){
-    if(ticking) return; ticking=true;
-    requestAnimationFrame(function(){
-      var y=window.pageYOffset;
-      nav.classList.toggle('scrolled', y>8);
-      if(!reduce){
-        parEls.forEach(function(el){
-          var r=el.getBoundingClientRect(); var mid=r.top+r.height/2;
-          var sp=parseFloat(el.getAttribute('data-speed'))||0;
-          el.style.transform='translate3d(0,'+(-(window.innerHeight/2-mid)*sp).toFixed(1)+'px,0)';
-        });
-      }
-      ticking=false;
-    });
   }
-  window.addEventListener('scroll',onScroll,{passive:true});
-  window.addEventListener('resize',onScroll);
-  onScroll();
-
-  // ── REALISTIC ANNOTATED 3D BUILDING + CITY DEPTH ──
-  (function(){
-    var stage=document.getElementById('stage');
-    if(!stage||typeof THREE==='undefined') return;
-
-    function facade(cols,rows,lit,base1,base2,sign){
-      var c=document.createElement('canvas'); c.width=cols*26; c.height=rows*30;
-      var x=c.getContext('2d');
-      var g=x.createLinearGradient(0,0,0,c.height); g.addColorStop(0,base1); g.addColorStop(1,base2);
-      x.fillStyle=g; x.fillRect(0,0,c.width,c.height);
-      var pad=8, cw=(c.width-pad*2)/cols, rh=(c.height-pad*2)/rows;
-      for(var r=0;r<rows;r++){for(var i=0;i<cols;i++){
-        var wx=pad+i*cw+cw*0.14, wy=pad+r*rh+rh*0.16, ww=cw*0.72, wh=rh*0.66;
-        var on=Math.random()<lit;
-        x.fillStyle=on?(Math.random()<0.5?'#f4d58a':'#eaf1ff'):'rgba(20,50,85,0.85)';
-        x.fillRect(wx,wy,ww,wh);
-        x.fillStyle='rgba(255,255,255,0.06)'; x.fillRect(wx,wy,ww,wh*0.2);
-      }}
-      if(sign){ x.fillStyle='#0D1F3C'; x.fillRect(0,c.height-rh*0.9,c.width,rh*0.9);
-        x.fillStyle='#C9A961'; x.fillRect(0,c.height-rh*0.9,c.width,3); }
-      var t=new THREE.CanvasTexture(c); t.encoding=THREE.sRGBEncoding; t.anisotropy=4; return t;
-    }
-
-    var renderer;
-    try{ renderer=new THREE.WebGLRenderer({antialias:true,alpha:true}); }
-    catch(e){ var lv=stage.querySelector('.leaders'); if(lv) lv.style.display='none'; return; }
-    renderer.setPixelRatio(Math.min(devicePixelRatio||1,2));
-    renderer.shadowMap.enabled=true; renderer.shadowMap.type=THREE.PCFSoftShadowMap;
-    renderer.outputEncoding=THREE.sRGBEncoding;
-    renderer.toneMapping=THREE.ACESFilmicToneMapping; renderer.toneMappingExposure=1.08;
-    stage.insertBefore(renderer.domElement, stage.firstChild);
-
-    var scene=new THREE.Scene();
-    scene.fog=new THREE.Fog(0x081428, 24, 55);
-    var camera=new THREE.PerspectiveCamera(42,1,0.1,140);
-
-    var b=new THREE.Group();
-    function block(w,h,d,y,mat){
-      var m=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),mat);
-      m.position.y=y; m.castShadow=true; m.receiveShadow=true; b.add(m);
-      var e=new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.BoxGeometry(w,h,d)),
-        new THREE.LineBasicMaterial({color:0xC9A961,transparent:true,opacity:0.28}));
-      e.position.y=y; b.add(e); return m;
-    }
-    var retailMat=new THREE.MeshStandardMaterial({map:facade(6,1,0.9,'#12345c','#0f2b4d',true),emissive:0xffffff,emissiveIntensity:0.45,metalness:0.35,roughness:0.45});
-    retailMat.emissiveMap=retailMat.map;
-    var podTex=facade(6,3,0.3,'#0f2740','#0b1d33');
-    var podMat=new THREE.MeshStandardMaterial({map:podTex,emissiveMap:podTex,emissive:0xffffff,emissiveIntensity:0.35,metalness:0.3,roughness:0.55});
-    var towerTex=facade(6,12,0.4,'#12345c','#0d2745');
-    var towerMat=new THREE.MeshStandardMaterial({map:towerTex,emissiveMap:towerTex,emissive:0xffffff,emissiveIntensity:0.55,metalness:0.4,roughness:0.42});
-    var goldMat=new THREE.MeshStandardMaterial({color:0xC9A961,metalness:0.85,roughness:0.28,emissive:0x3a2c10,emissiveIntensity:0.4});
-
-    block(5.0,1.4,4.0,0.7,retailMat);
-    block(4.4,2.8,3.6,2.8,podMat);
-    block(3.2,7.5,2.6,7.95,towerMat);
-    block(3.4,0.7,2.8,12.05,goldMat);
-    b.rotation.y=-0.32;
-    scene.add(b);
-
-    // distant city skyline (depth)
-    var cityMat=new THREE.MeshStandardMaterial({color:0x0a1c33,metalness:0.15,roughness:0.95});
-    var city=new THREE.Group();
-    for(var i=0;i<13;i++){
-      var bw=1.1+Math.random()*1.7, bh=3+Math.random()*8, bd=1.1+Math.random()*1.4;
-      var m=new THREE.Mesh(new THREE.BoxGeometry(bw,bh,bd),cityMat);
-      m.position.set(-16+i*2.7+(Math.random()*1.2-0.6), bh/2-0.6, -9-Math.random()*5);
-      city.add(m);
-    }
-    scene.add(city);
-
-    // ground shadow
-    var ground=new THREE.Mesh(new THREE.PlaneGeometry(80,80),new THREE.ShadowMaterial({opacity:0.32}));
-    ground.rotation.x=-Math.PI/2; ground.receiveShadow=true; scene.add(ground);
-
-    var key=new THREE.DirectionalLight(0xfff4e0,1.5); key.position.set(8,16,10); key.castShadow=true;
-    key.shadow.mapSize.set(1024,1024); key.shadow.camera.near=1; key.shadow.camera.far=60;
-    key.shadow.camera.left=-16;key.shadow.camera.right=16;key.shadow.camera.top=22;key.shadow.camera.bottom=-4;
-    scene.add(key);
-    var fill=new THREE.DirectionalLight(0x2fa79e,0.5); fill.position.set(-10,6,-4); scene.add(fill);
-    var rim=new THREE.DirectionalLight(0xC9A961,0.7); rim.position.set(-6,10,-8); scene.add(rim);
-    scene.add(new THREE.AmbientLight(0x24344f,0.9));
-
-    var anno=[
-      {sel:'.t1',v:new THREE.Vector3(0,0.9,2.05),ox:0.16,oy:0.30},
-      {sel:'.t2',v:new THREE.Vector3(0,2.9,1.9),ox:0.16,oy:0.78},
-      {sel:'.t3',v:new THREE.Vector3(0,7.0,1.35),ox:0.84,oy:0.26},
-      {sel:'.t4',v:new THREE.Vector3(0,11.6,1.45),ox:0.84,oy:0.74}
-    ];
-    var svg=document.getElementById('leaders');
-    var NS='http://www.w3.org/2000/svg';
-    anno.forEach(function(a){
-      a.line=document.createElementNS(NS,'line');
-      a.line.setAttribute('stroke','#C9A961'); a.line.setAttribute('stroke-width','1'); a.line.setAttribute('stroke-opacity','0.7');
-      a.dot=document.createElementNS(NS,'circle'); a.dot.setAttribute('r','3.2');
-      a.dot.setAttribute('fill','#E4C77E'); a.dot.setAttribute('stroke','#fff'); a.dot.setAttribute('stroke-width','0.8');
-      svg.appendChild(a.line); svg.appendChild(a.dot);
-    });
-
-    var W=1,H=1;
-    function resize(){
-      W=stage.clientWidth; H=stage.clientHeight; if(!W||!H) return;
-      renderer.setSize(W,H,false); camera.aspect=W/H; camera.updateProjectionMatrix();
-      svg.setAttribute('viewBox','0 0 '+W+' '+H);
-    }
-    resize(); window.addEventListener('resize',resize);
-
-    function updateAnno(){
-      if(W<920) return;
-      anno.forEach(function(a){
-        var p=a.v.clone(); b.localToWorld(p); p.project(camera);
-        var behind=p.z>1;
-        var sx=(p.x*0.5+0.5)*W, sy=(-p.y*0.5+0.5)*H;
-        var ox=a.ox*W, oy=a.oy*H, vis=behind?0:1;
-        a.dot.setAttribute('cx',sx); a.dot.setAttribute('cy',sy); a.dot.setAttribute('opacity',vis);
-        a.line.setAttribute('x1',ox); a.line.setAttribute('y1',oy);
-        a.line.setAttribute('x2',sx); a.line.setAttribute('y2',sy); a.line.setAttribute('opacity',vis*0.7);
-      });
-    }
-
-    var running=true, drag=false, lastX=0, userY=0, auto=0;
-    document.addEventListener('visibilitychange',function(){running=!document.hidden;});
-    function down(x){drag=true;lastX=x;} function move(x){if(!drag)return;userY+=(x-lastX)*0.008;lastX=x;} function up(){drag=false;}
-    stage.addEventListener('mousedown',function(e){down(e.clientX);});
-    window.addEventListener('mousemove',function(e){move(e.clientX);});
-    window.addEventListener('mouseup',up);
-    stage.addEventListener('touchstart',function(e){down(e.touches[0].clientX);},{passive:true});
-    stage.addEventListener('touchmove',function(e){move(e.touches[0].clientX);},{passive:true});
-    stage.addEventListener('touchend',up);
-
-    var t=0;
-    function loop(){
-      requestAnimationFrame(loop);
-      if(!running) return;
-      // scroll-driven camera parallax
-      var hero=stage.getBoundingClientRect();
-      var frac=Math.max(0,Math.min(1,(-hero.top)/(hero.height||1)));
-      camera.position.set(9.5, 7+frac*3.0, 15.5-frac*1.5);
-      camera.lookAt(0, 6-frac*0.6, 0);
-      if(!reduce && !drag){ auto=Math.sin(t)*0.28; t+=0.006; }
-      b.rotation.y=-0.32+auto+userY;
-      renderer.render(scene,camera);
-      updateAnno();
-    }
-    loop();
-  })();
 </script>
 </body>
 </html>
